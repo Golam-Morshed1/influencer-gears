@@ -5,7 +5,6 @@
     --background-color: #E02C6D;
     font-size: 16px;
 }
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -67,6 +66,8 @@ header img {
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0 24px;
 }
 
 .hero-info {
@@ -88,7 +89,6 @@ header img {
 
 .hero-img-div {
     max-width: 475px;
-    margin-right: 132px;
     margin-top: 50px;
 }
 
@@ -99,20 +99,107 @@ header img {
     background-size: cover;
 }
 
+/* Brand section */
+.Brand-section {
+    margin-bottom: 100px;
+}
+
+.Brand-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.172);
+    border-top: 1px solid rgba(128, 128, 128, 0.172);
+    padding: 36px 60px;
+}
+
+/* Collection section */
+.Collection {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.Collection-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.Collection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.Collection-card {
+    width: 100%; /* this is enough */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+    box-sizing: border-box; /* add this too */
+}
+
+.Collection-card h3,
+.Collection-card h4,
+.Collection-card p {
+    margin: 0;
+}
+
+.Collection-card img {
+    width: 100%;
+}
+
+.Collection-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.Collection-card h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Inter";
+    margin-bottom: 6px;
+}
+
+.rating {
+    display: flex;
+    gap: 8px;
+    color: #FB8200;
+}
+
+.rating-number {
+    color: #5E6366;
+}
+
+.Collection-card p {
+    color: #787885;
+}
+
+
+
 
 /* small screen device */
 @media screen and (max-width:576px) {
     :root {
         font-size: 14px;
     }
+
     .navbar,
     .hero-section {
         flex-direction: column;
     }
+
     .hero-section {
         flex-direction: column-reverse;
     }
-    .hero-title{
+
+    .hero-title {
         font-size: 2.5rem;
     }
 
@@ -134,5 +221,22 @@ header img {
     .hero-img-div {
         margin: 0 auto;
         margin-top: 30px;
+    }
+
+    /* Bran section */
+    .Brand-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .Brand-container img {
+        width: 100%;
+    }
+
+    /* Collection section */
+
+    .Collection-container {
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 auto;
     }
 }
