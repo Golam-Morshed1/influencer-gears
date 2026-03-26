@@ -5,6 +5,7 @@
     --background-color: #E02C6D;
     font-size: 16px;
 }
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -26,6 +27,7 @@ body {
     padding: 10px 24px;
     gap: 10px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 /* Nav related styles */
@@ -120,6 +122,7 @@ header img {
 .Collection {
     max-width: 1050px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .Collection-title {
@@ -134,14 +137,15 @@ header img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .Collection-card {
-    width: 100%; /* this is enough */
+    width: 100%;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
-    box-sizing: border-box; /* add this too */
+    box-sizing: border-box;
 }
 
 .Collection-card h3,
@@ -181,6 +185,86 @@ header img {
     color: #787885;
 }
 
+.Collection-more-div {
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.see-more {
+    color: #e02c6ee1;
+    margin: 0;
+}
+
+/* Featured-section */
+
+.Featured-section {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    gap: 96px;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.Featured-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Featured-img-div {
+    max-width: 400px;
+}
+
+.Featured-img-div>img {
+    width: 100%;
+}
+
+.Featured-info {
+    font-weight: 700;
+    max-width: 500px;
+    width: 100%;
+    color: #6C6C6C;
+}
+
+/* footer */
+footer {
+    background-color: #0A0826;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 10px;
+}
+.footer-title{
+    margin: 0;
+}
+footer > p{
+    margin: 0;
+    color: #D9DBE1;
+}
+.footer-icons{
+    gap: 10px;
+}
+.socail-icon-div{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #5e636661;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon{
+    width: 80%;
+    color: white;
+}
 
 
 
@@ -236,7 +320,13 @@ header img {
     /* Collection section */
 
     .Collection-container {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    /* Featured-section */
+    .Featured-section {
+        flex-direction: column-reverse;
     }
 }
